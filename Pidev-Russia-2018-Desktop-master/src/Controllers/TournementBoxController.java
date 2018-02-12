@@ -5,6 +5,7 @@
  */
 package Controllers;
 
+import com.jfoenix.controls.JFXButton;
 import java.net.URL;
 import java.util.ResourceBundle;
 import javafx.animation.FadeTransition;
@@ -32,6 +33,10 @@ public class TournementBoxController implements Initializable {
     BorderPane parent;
     @FXML
     public static VBox nav;
+    @FXML
+    private JFXButton mainMenu;
+    @FXML
+    private JFXButton games;
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         
