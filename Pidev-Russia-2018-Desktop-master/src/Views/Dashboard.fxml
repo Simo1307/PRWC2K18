@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.geometry.*?>
 <?import javafx.scene.image.*?>
 <?import javafx.scene.effect.*?>
 <?import javafx.scene.text.*?>
@@ -31,8 +32,16 @@
    <left>
       <Pane fx:id="main" prefHeight="720.0" prefWidth="241.0" BorderPane.alignment="CENTER">
          <children>
-            <VBox fx:id="nav" prefHeight="720.0" prefWidth="241.0" styleClass="navbar" stylesheets="@dashboard.css">
+            <VBox prefHeight="720.0" prefWidth="241.0" styleClass="navbar" stylesheets="@dashboard.css">
                <children>
+                  <ImageView fitHeight="241.0" fitWidth="353.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../assets/admin.png" />
+                     </image>
+                     <VBox.margin>
+                        <Insets bottom="15.0" top="15.0" />
+                     </VBox.margin>
+                  </ImageView>
                   <JFXButton onMouseClicked="#usersNavbar" prefHeight="50.0" prefWidth="254.0" text="Users" textFill="WHITE" />
                   <JFXButton onMouseClicked="#tournementNavbar" prefHeight="50.0" prefWidth="254.0" text="Tournement" textFill="WHITE" />
                   <JFXButton onMouseClicked="#teamsNavbar" prefHeight="50.0" prefWidth="254.0" text="Teams" textFill="WHITE" />
