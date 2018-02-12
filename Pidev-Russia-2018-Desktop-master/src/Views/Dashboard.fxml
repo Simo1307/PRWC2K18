@@ -47,6 +47,7 @@
                   <JFXButton onMouseClicked="#teamsNavbar" prefHeight="50.0" prefWidth="254.0" text="Teams" textFill="WHITE" />
                   <JFXButton onMouseClicked="#newsNavbar" prefHeight="50.0" prefWidth="254.0" text="News" textFill="WHITE" />
                   <JFXButton onMouseClicked="#guideNavbar" prefHeight="50.0" prefWidth="254.0" text="Guide" textFill="WHITE" />
+                  <JFXButton onMouseClicked="#GalleryNavbar" prefHeight="50.0" prefWidth="254.0" text="Gallery" textFill="WHITE" />
                </children>
             </VBox>
          </children>

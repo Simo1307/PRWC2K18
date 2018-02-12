@@ -79,6 +79,7 @@ public class DashboardController implements Initializable {
         
             tournementBox = FXMLLoader.load(getClass().getResource("/Views/tournementBox.fxml"));
             games = FXMLLoader.load(getClass().getResource("/Views/GamesCrud.fxml"));
+            
             for (Node node : tournementBox.getChildren()) {
                     node.addEventHandler(MouseEvent.MOUSE_PRESSED, (k) -> {
                         switch (node.getId()) {
@@ -91,6 +92,7 @@ public class DashboardController implements Initializable {
                         }
                     });
                 }
+            
         } catch (IOException ex) {
             Logger.getLogger(DashboardController.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -119,5 +121,9 @@ public class DashboardController implements Initializable {
     @FXML
     private void tournementNavbar(MouseEvent event) {
         setNavNode(tournementBox);
+    }
+
+    @FXML
+    private void GalleryNavbar(MouseEvent event) {
     }
 }

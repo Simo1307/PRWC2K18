@@ -13,7 +13,7 @@
         <URL value="@gamescrud.css" />
     </stylesheets>
    <children>
-      <BorderPane layoutX="1.0" prefHeight="641.0" prefWidth="958.0">
+      <BorderPane layoutX="1.0" prefHeight="739.0" prefWidth="958.0">
          <top>
             <Pane prefHeight="68.0" prefWidth="958.0" BorderPane.alignment="CENTER">
                <children>
