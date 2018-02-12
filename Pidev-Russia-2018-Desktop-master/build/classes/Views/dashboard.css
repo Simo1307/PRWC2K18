@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+@font-face {
+    font-family: 'Dusha';
+    src: url('/assets/dusha.ttf');
+}
+
+.topbar
+{
+    -fx-background-image: url("/assets/blue.png");
+}
+.body
+{
+    -fx-background-image: url("/assets/white.png");
+}
+.navbar
+{
+    -fx-background-image: url("/assets/red.png");
+}
+
+

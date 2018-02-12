@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import com.jfoenix.controls.*?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="800.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.DashboardController">
+   <top>
+      <Pane prefHeight="80.0" prefWidth="200.0" styleClass="topbar" stylesheets="@dashboard.css" BorderPane.alignment="CENTER">
+         <children>
+            <ImageView fitHeight="60.0" fitWidth="454.0" layoutX="483.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/R2018.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="83.0" fitWidth="94.0" layoutX="1107.0" layoutY="2.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../assets/Alpha.png" />
+               </image>
+            </ImageView>
+         </children>
+      </Pane>
+   </top>
+   <left>
+      <Pane fx:id="main" prefHeight="720.0" prefWidth="241.0" BorderPane.alignment="CENTER">
+         <children>
+            <VBox fx:id="nav" prefHeight="720.0" prefWidth="241.0" styleClass="navbar" stylesheets="@dashboard.css">
+               <children>
+                  <JFXButton onMouseClicked="#usersNavbar" prefHeight="50.0" prefWidth="254.0" text="Users" textFill="WHITE" />
+                  <JFXButton onMouseClicked="#tournementNavbar" prefHeight="50.0" prefWidth="254.0" text="Tournement" textFill="WHITE" />
+                  <JFXButton onMouseClicked="#teamsNavbar" prefHeight="50.0" prefWidth="254.0" text="Teams" textFill="WHITE" />
+                  <JFXButton onMouseClicked="#newsNavbar" prefHeight="50.0" prefWidth="254.0" text="News" textFill="WHITE" />
+                  <JFXButton onMouseClicked="#guideNavbar" prefHeight="50.0" prefWidth="254.0" text="Guide" textFill="WHITE" />
+               </children>
+            </VBox>
+         </children>
+      </Pane>
+   </left>
+   <center>
+      <Pane fx:id="content" maxHeight="720.0" maxWidth="959.0" prefHeight="720.0" prefWidth="959.0" styleClass="body" stylesheets="@dashboard.css" BorderPane.alignment="CENTER" />
+   </center>
+</BorderPane>

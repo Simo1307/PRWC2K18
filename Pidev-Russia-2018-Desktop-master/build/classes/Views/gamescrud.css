@@ -1,0 +1,8 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.body
+{
+    -fx-background-image: url("/assets/white.png");
+}
